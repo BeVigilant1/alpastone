@@ -1,0 +1,41 @@
+/* ===COLORS=== */
+
+$colorLightGrey: #ebebeb;
+$colorGrey: #555555;
+$colorDark: #222222;
+
+
+/* ===TYPOGRAPHY=== */
+
+$textShadow: 1px 1px 1px #ebebeb;
+$skewDeg: -9Deg;
+$timing: .5s;
+$easing: ease-in-out;
+
+/* ===TYPOGRAPHY=== */
+
+$xsmall:  .6em;
+$small:  .8em;
+$normal:  1em;
+$medium:  1.3em;
+$xmedium: 1.8em;
+$large:  2.68em;
+$xlarge: 3em;
+$xxlarge:  4em;
+$giant: 8em;
+$xgiant: 9.7em;
+$xxgiant: 11.2em;
+
+/* ===MIXINS=== */
+
+@mixin shadow() {
+    box-shadow: -1px 2px 5px rgba(0,0,0,0.1);
+}
+
+@mixin outline() {
+outline: 1px solid #FFFFFF;
+outline-offset: 2px 2px;
+}
+
+/* ===MISC=== */
+$containerPadding: 60px 0 30px;

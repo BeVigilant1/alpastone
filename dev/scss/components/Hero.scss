@@ -1,0 +1,150 @@
+@import "../theme/variables";
+
+.hero {
+  margin-top: 100px;
+  height: 640px;
+  background-image: url('../img/hero1.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  &__textblock {
+    background: #fff;
+    margin-top: 120px;
+    padding: 35px 35px 50px 35px;
+  }
+  &__button {
+  margin-top: 75px;
+  background: transparent;
+  border: 1px $colorGrey solid;
+  color: $colorGrey;
+  border-radius: 0;
+
+  }
+}
+
+.company {
+  @extend .hero;
+  margin-top: 0;
+  background: #fff;
+  &__textblock {
+    @extend .hero__textblock;
+    margin-top: 60px;
+  }
+  &__button {
+    @extend .hero__button;
+  }
+  &__image {
+    overflow:hidden;
+  }
+}
+
+
+.decor {
+  &__block {
+    p {
+    font-size: $small;
+    margin-top: 15px;
+    }
+    &--item {
+      background: url('../img/decor1.png') no-repeat;
+      background-size: cover;
+      background-position: center center;
+      height: 300px;
+      transition: background $timing*4 $easing;
+      &:hover {
+        cursor:pointer;
+        background:url('../img/decor1.png') ;
+        background-repeat: no-repeat;
+        background-color:rgba(17, 17, 17, .4)
+        h2 {
+        &:after {
+        display: block;
+        }
+        }
+      }
+      h2 {
+        color:#fff;
+        position: absolute;
+        bottom: 80px;
+        left:40px;
+        font-size: $xmedium;
+      }
+    }
+  }
+}
+
+
+
+.services {
+  &__block {
+    &--item {
+      background: url('../img/decor1.png') no-repeat;
+      background-size: 100%;
+      background-position: center center;
+      height: 300px;
+      transition: background-size $timing*4 $easing;
+      margin-bottom: 40px;
+      &:hover {
+        cursor:pointer;
+        background-size: 150%;
+        h2,p {
+          opacity: 1;
+        }
+        }
+      }
+      h2, p {
+        transition: opacity $timing $easing;
+      }
+      h2 {
+        color:#fff;
+        position: absolute;
+        bottom: 60px;
+        left:40px;
+        font-size: $xmedium;
+        opacity:0;
+      }
+      p {
+        color:#fff;
+        position: absolute;
+        bottom: 15px;
+        left:40px;
+        opacity:0;
+
+      }
+    }
+  }
+
+
+
+.footer {
+  background-color: $colorDark;
+  color: $colorLightGrey;
+  height: 200px;
+  &__info {
+    padding-left: 30px;
+    h2 {
+      padding-left: 20px;
+    }
+    ul {
+    list-style: none;
+    padding: 0;
+    li{
+      display: inline-block;
+      list-style: none;
+      text-transform: uppercase;
+      font-weight: light;
+      padding: 20px 20px 20px 20px;
+      transition: padding $timing $easing;
+      a{
+        color:$colorGrey;
+      }
+    }
+  }
+  }
+  &__social {
+    padding-left: 30px;
+    &--link {
+      padding: 0 15px 0 0;
+    }
+  }
+}
