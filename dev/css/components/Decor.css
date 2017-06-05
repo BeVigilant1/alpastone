@@ -1,0 +1,52 @@
+/* ===COLORS=== */
+/* ===TYPOGRAPHY=== */
+/* ===TYPOGRAPHY=== */
+/* ===MIXINS=== */
+/* ===MISC=== */
+.content {
+  background: #fff; }
+
+.decorPage {
+  margin-top: 100px; }
+  .decorPage h1 {
+    text-align: right;
+    margin-bottom: 100px; }
+  .decorPage__item {
+    border: 2px #555555 solid;
+    height: 100px;
+    opacity: .7;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #555555;
+    font-size: 1.8em;
+    vertical-align: middle;
+    padding-top: 25px; }
+    .decorPage__item:hover {
+      cursor: pointer;
+      opacity: 1; }
+
+.decor__block p {
+  font-size: 0.8em;
+  margin-top: 15px; }
+.decor__block--item {
+  background: url("../img/decor1.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  transition: background 2s ease-in-out; }
+  .decor__block--item:hover {
+    cursor: pointer;
+    background: url("../img/decor1.png");
+    background-repeat: no-repeat; }
+    .decor__block--item:hover background-color:rgba(17, 17, 17, .4)
+    h2:after {
+      display: block; }
+  .decor__block--item h2 {
+    color: #fff;
+    position: absolute;
+    bottom: 80px;
+    left: 40px;
+    font-size: 1.8em; }
+
+/*# sourceMappingURL=Decor.css.map */
