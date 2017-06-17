@@ -1,0 +1,44 @@
+@import "../theme/variables";
+
+
+.usecase {
+  h1 {
+    text-align: right;
+  }
+  h2 {
+    text-align: left;
+  }
+  p {
+    font-size: $normal;
+  }
+  margin-top: 100px;
+  &__showcase {
+    width:100%;
+    &--small {
+      @extend .usecase__showcase;
+    }
+  }
+  &__text {
+    margin-top: 35px;
+  }
+  &__label {
+    color: $colorLightGrey;
+    font-size: $medium;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 35px;
+  }
+  &__left, &__right {
+    height: 100px;
+    background-color: $colorLightGrey;
+    color: $colorGrey;
+    font-size: $xxlarge;
+    user-select:none;
+    opacity:.7;
+    &:hover{
+      color:#fff;
+      cursor:pointer;
+      opacity:1;
+    }
+  }
+}

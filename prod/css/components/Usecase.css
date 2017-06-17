@@ -1,0 +1,36 @@
+/* ===COLORS=== */
+/* ===TYPOGRAPHY=== */
+/* ===TYPOGRAPHY=== */
+/* ===MIXINS=== */
+/* ===MISC=== */
+.usecase {
+  margin-top: 100px; }
+  .usecase h1 {
+    text-align: right; }
+  .usecase h2 {
+    text-align: left; }
+  .usecase p {
+    font-size: 1em; }
+  .usecase__showcase, .usecase__showcase--small {
+    width: 100%; }
+  .usecase__text {
+    margin-top: 35px; }
+  .usecase__label {
+    color: #ebebeb;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 35px; }
+  .usecase__left, .usecase__right {
+    height: 100px;
+    background-color: #ebebeb;
+    color: #555555;
+    font-size: 4em;
+    user-select: none;
+    opacity: .7; }
+    .usecase__left:hover, .usecase__right:hover {
+      color: #fff;
+      cursor: pointer;
+      opacity: 1; }
+
+/*# sourceMappingURL=Usecase.css.map */

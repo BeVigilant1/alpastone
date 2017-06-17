@@ -1,0 +1,17 @@
+/* ===COLORS=== */
+/* ===TYPOGRAPHY=== */
+/* ===TYPOGRAPHY=== */
+/* ===MIXINS=== */
+/* ===MISC=== */
+.contacts {
+  background: #555555;
+  margin-top: 100px; }
+  .contacts h1 {
+    text-align: center;
+    color: #ebebeb; }
+  .contacts p {
+    text-align: center;
+    color: #ebebeb;
+    padding-bottom: 35px; }
+
+/*# sourceMappingURL=Contacts.css.map */

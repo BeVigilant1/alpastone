@@ -9,22 +9,20 @@
   background: $colorLightGrey;
   border: none;
   z-index: 666;
-  transition: all $timing*3 $easing;
+  transition: all $timing $easing;
 
   ul {
     list-style: none;
+    padding: 0;
     li{
       display: inline-block;
       list-style: none;
       text-transform: uppercase;
       font-weight: light;
-      animation: textup $timing*3 $easing forwards;
+      padding: 40px 20px 20px 20px;
       transition: padding $timing $easing;
-      position: relative;
-      padding: 0 20px;
-      left: -10px;
       a{
-        color:$colorDark;
+        color:$colorGrey;
       }
     }
   }
@@ -37,52 +35,35 @@
     height: 250px;
     border-radius: 50%;
     vertical-align: middle;
-    transition:all $timing*4 $easing;
+    transition:all $timing $easing;
     &--image {
     width: 200px;
     height: 200px;
     margin: 25px;
-    transition: all $timing*4 $easing;
+    transition: all $timing $easing;
     }
   }
 }
 .navbar-alt {
   @extend .navbar;
   ul li {
-    transition:all $timing*2 $easing;
-    animation: textupAlt $timing*2 $easing forwards;
+    transition:padding $timing $easing;
+    padding: 20px;
   }
   height: 60px;
-  transition:all $timing*2 $easing;
+  transition:all $timing $easing;
   .navbar__logo {
     @extend .navbar__logo;
     width: 100px;
     height: 100px;
     top:0;
-    transition: all $timing*3 $easing;
+    transition: all $timing $easing;
   }
   .navbar__logo--image {
     width: 75px;
     height: 75px;
     margin:12px;
-    transition: all $timing*3 $easing;
+    transition: all $timing $easing;
 
   }
-}
-
-@keyframes textup {
-  0% {
-    top: 20px;
-  }
-100% {
-    top:40px;
-}
-}
-@keyframes textupAlt {
-  0% {
-    top: 40px;
-  }
-100% {
-    top:20px;
-}
 }
