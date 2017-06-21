@@ -14,6 +14,7 @@
   margin-top: 100px;
   &__showcase {
     width:100%;
+    margin-bottom: 60px;
     &--small {
       @extend .usecase__showcase;
     }

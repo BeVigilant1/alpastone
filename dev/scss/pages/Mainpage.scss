@@ -4,10 +4,11 @@
 .hero {
   margin-top: 60px;
   height: 640px;
-  background-image: url('../img/hero1.png');
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
+
+  background-image: url('../img/decor_kamin2.jpg');
   &__textblock {
     background: #fff;
     margin-top: 120px;
@@ -15,8 +16,7 @@
   }
   &__button {
   cursor: pointer;
-  margin-top: 75px;
-  border: 1px $colorDark solid;
+  margin-top: 24px;
   padding: 20px 40px;
   background: transparent;
       color:$colorDark;
@@ -27,34 +27,31 @@
       transition: color $timing $easing;
       text-transform: uppercase;
       letter-spacing: .1em;
+      border:none;
+      @include shadow();
     &:before {
       content:'';
       display: block;
       height: 0;
       width: 100%;
       height: 100%;
-
       bottom:0;
       left:0;
       background-color:$colorLightGrey;
       position:absolute;
       z-index: -20;
       transform: scaleY(0);
-
       transition: height $timing $easing, transform $timing $easing  ;
     }
   &:hover {
-  color:$colorGrey;
-
+    box-shadow: none;
+    color:$colorGrey;
     &:before {
       transform: scaleY(1);
-
-
     }
   }
   }
 }
-
 
 
 .company {
@@ -63,13 +60,15 @@
   background: #fff;
   &__textblock {
     @extend .hero__textblock;
-    margin-top: 60px;
+    margin-top: 120px;
+
   }
   &__button {
     @extend .hero__button;
   }
   &__image {
     overflow:hidden;
+    margin-top: 120px;
   }
 }
 
@@ -79,17 +78,33 @@
     p {
     font-size: $small;
     margin-top: 15px;
+    min-height: 10px;
     }
     &--item {
-      background: url('../img/decor1.png') no-repeat;
+      background: url('../img/decor_lestnica2.jpg') no-repeat;
       background-size: 105%;
       background-position: center center;
-      height: 300px;
-      transition: background $timing*3 $timing $easing;
+      height: 450px;
+      transition: background $timing*10 $timing $zoom;
+      &:nth-child(2){
+      background: url('../img/decor_kamin3.jpg') no-repeat;
+
+      }
+         &:nth-child(3){
+      background: url('../img/decor_lestnica2.jpg') no-repeat;
+
+      }
+         &:nth-child(4){
+      background: url('../img/decor_lestnica2.jpg') no-repeat;
+
+      }
+         &:nth-child(5){
+      background: url('../img/decor_lestnica2.jpg') no-repeat;
+
+      }
       &:hover {
         cursor:pointer;
         background-size: 100%;
-        background-color:rgba(17, 17, 17, .4)
         h2 {
         &:after {
         display: block;
@@ -98,9 +113,9 @@
       }
       h2 {
         color:#fff;
-        position: absolute;
-        bottom: 80px;
-        left:40px;
+        position: relative;
+        top: 80%;
+        left:5%;
         font-size: $xmedium;
       }
     }
@@ -112,35 +127,36 @@
 .services {
   &__block {
     &--item {
-      background: url('../img/decor1.png') no-repeat;
-      background-size: 100%;
+      background:$colorLightGrey url('../img/decor1.png') no-repeat;
+      background-size: 150%;
       background-position: center center;
-      height: 300px;
-      transition: background-size $timing*4 $easing;
+        background-origin: 10;
+      height: 600px;
+      transition: all $timing*12 $zoom;
       margin-bottom: 40px;
       &:hover {
         cursor:pointer;
-        background-size: 150%;
+        background-size:  100%;
         h2,p {
           opacity: 1;
         }
         }
       }
       h2, p {
-        transition: opacity $timing $easing;
+        transition: opacity $timing $zoom;
       }
       h2 {
         color:#fff;
         position: absolute;
-        bottom: 60px;
+        bottom: 150px;
         left:40px;
-        font-size: $xmedium;
+        font-size: $large;
         opacity:0;
       }
       p {
         color:#fff;
         position: absolute;
-        bottom: 15px;
+        bottom: 115px;
         left:40px;
         opacity:0;
 

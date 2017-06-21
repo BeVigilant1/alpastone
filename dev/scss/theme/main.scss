@@ -18,7 +18,7 @@ body, html {
 h1 {
   font-size: $large;
   line-height: 1.2em;
-  margin: 40px 0 40px 0;
+  margin: 10px 0 40px 0;
   line-height: normal;
   white-space: normal;
 
@@ -60,23 +60,32 @@ a {
 
 .spacer {
   clear: both;
-  padding: 60px 0;
+  margin: 120px 0;
   width: 100%;
-  color: $colorLightGrey;
-  font-size: $medium;
-  text-transform: uppercase;
-  text-align: center;
+  height:100%;
 
+  p {
+    max-width: 450px;
+  text-align: center;
+    color: $colorGrey;
+  font-size: $normal;
+  font-style: italic;
+  margin: 0 auto;
+  padding: 70px 70px;
+  @include shadow();
+  }
 }
 
 .spacer-white {
   @extend .spacer;
-  background: #fff
+  background: #fff;
+  margin: 60px 0;
+
 }
 
 .spacer-small {
   @extend .spacer;
-  padding: 30px;
+  margin: 30px;
 }
 
 
