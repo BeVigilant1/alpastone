@@ -6,6 +6,7 @@
 /* ===MIXINS=== */
 /* ===MISC=== */
 /* ===PRELOADER=== */
+@import "//fonts.fontstorage.com/import/qolyazma.css";
 div#preloader {
   position: fixed;
   left: 0;
@@ -68,7 +69,8 @@ body, html {
   padding: 0;
   color: black;
   background: #ebebeb;
-  font-size: 100%; }
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif; }
 
 * {
   text-rendering: optimizeLegibility; }
@@ -78,7 +80,8 @@ h1, h2, h3 {
   line-height: 1.2em;
   margin: 10px 0 40px 0;
   line-height: normal;
-  white-space: normal; }
+  white-space: normal;
+  font-family: 'UKIJ Qolyazma'; }
 
 h2 {
   font-size: 1.3em;
@@ -109,12 +112,12 @@ a {
   margin: 120px 0;
   width: 100%;
   height: 100%; }
-  .spacer p, .spacer-white p, .spacer-small p {
+  .spacer div, .spacer-white div, .spacer-small div {
+    font-family: 'UKIJ Qolyazma';
     max-width: 450px;
     text-align: center;
     color: #555555;
     font-size: 1em;
-    font-style: italic;
     margin: 0 auto;
     padding: 70px 70px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); }
@@ -171,6 +174,12 @@ div#preloader {
     text-align: center;
     color: #ebebeb;
     padding-bottom: 35px; }
+
+.texter {
+  font-size: 0.8em;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 450px; }
 
 /* ===COLORS=== */
 /* ===TYPOGRAPHY=== */
@@ -351,14 +360,12 @@ div#preloader {
   font-size: 0.8em;
   margin-top: 15px; }
 .decor__block--item {
-  background: url("../img/decor1.png") no-repeat;
   background-size: cover;
   background-position: center center;
   height: 300px;
   transition: background 2s cubic-bezier(0.86, 0, 0.07, 1); }
   .decor__block--item:hover {
     cursor: pointer;
-    background: url("../img/decor1.png");
     background-repeat: no-repeat; }
     .decor__block--item:hover background-color:rgba(17, 17, 17, .4)
     h2:after {
@@ -412,6 +419,9 @@ div#preloader {
     background: #fff;
     margin-top: 120px;
     padding: 35px 35px 50px 35px; }
+    .hero__textblock p, .company__textblock p {
+      line-height: 2em;
+      font-size: 0.8em; }
   .hero__button, .company__button {
     cursor: pointer;
     margin-top: 24px;
@@ -465,14 +475,6 @@ div#preloader {
   background-position: center center;
   height: 450px;
   transition: background 5s 0.5s cubic-bezier(0.15, 0.72, 0.43, 0.85); }
-  .decor__block--item:nth-child(2) {
-    background: url("../img/decor_kamin3.jpg") no-repeat; }
-  .decor__block--item:nth-child(3) {
-    background: url("../img/decor_lestnica2.jpg") no-repeat; }
-  .decor__block--item:nth-child(4) {
-    background: url("../img/decor_lestnica2.jpg") no-repeat; }
-  .decor__block--item:nth-child(5) {
-    background: url("../img/decor_lestnica2.jpg") no-repeat; }
   .decor__block--item:hover {
     cursor: pointer;
     background-size: 100%; }
@@ -486,7 +488,7 @@ div#preloader {
     font-size: 1.8em; }
 
 .services__block--item {
-  background: #ebebeb url("../img/decor1.png") no-repeat;
+  background-image: url("../img/decor_kamin2.jpg");
   background-size: 150%;
   background-position: center center;
   background-origin: 10;

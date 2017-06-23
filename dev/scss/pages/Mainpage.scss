@@ -1,18 +1,21 @@
 @import "../theme/variables";
 
-
 .hero {
   margin-top: 60px;
   height: 640px;
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
-
   background-image: url('../img/decor_kamin2.jpg');
   &__textblock {
     background: #fff;
     margin-top: 120px;
     padding: 35px 35px 50px 35px;
+    p {
+    line-height: 2em;
+    font-size: $small;
+
+    }
   }
   &__button {
   cursor: pointer;
@@ -86,22 +89,6 @@
       background-position: center center;
       height: 450px;
       transition: background $timing*10 $timing $zoom;
-      &:nth-child(2){
-      background: url('../img/decor_kamin3.jpg') no-repeat;
-
-      }
-         &:nth-child(3){
-      background: url('../img/decor_lestnica2.jpg') no-repeat;
-
-      }
-         &:nth-child(4){
-      background: url('../img/decor_lestnica2.jpg') no-repeat;
-
-      }
-         &:nth-child(5){
-      background: url('../img/decor_lestnica2.jpg') no-repeat;
-
-      }
       &:hover {
         cursor:pointer;
         background-size: 100%;
@@ -127,7 +114,7 @@
 .services {
   &__block {
     &--item {
-      background:$colorLightGrey url('../img/decor1.png') no-repeat;
+  background-image: url('../img/decor_kamin2.jpg');
       background-size: 150%;
       background-position: center center;
         background-origin: 10;

@@ -19,18 +19,36 @@ $(function() {
     });
 });
 
+// const data = [
+//         '../img/decor_kamin.jpg.jpg',
+//         '../img/decor_kamin2.jpg.jpg',
+//          '../img/decor_kamin3.jpg.jpg',
+//          '../img/decor_kamin4.jpg.jpg'
+//     ];
+
+// $(function() {
+// let imageUrl;
+// for (var i = data.length - 1; i >= 0; i--) {
+//     Things[i]
+// }
+// $('myOjbect').css('background-image', `url(${imageUrl}[i])`);
+// });
+
+
+
+//     var elem = document.getElementsByClassName('decor__block--item');
+//     elem.forEach(function(item, i, elem) {
+//         elem.item(i).style.backgroundImage = "url(" + data + ")";
+
+//     });
 
 // function interpolation() {
-//     const data = [
-//         'http://res.cloudinary.com/drmhxontt/image/upload/v1498005699/Alpa Stone/decor_kamin3.jpg',
-//         '../img/decor_lestnica.jpg',
-//          '../img/decor_kuhnya.jpg',
-//          '../img/decor_oblicovka_sten.jpg'
-//     ];
-//     const item = 0;
-//     for (item < 3) {
+//     data.map(interpolation) {
+
+//     }
+
 //     elem = document.getElementById("decor");
-//     elem.style.backgroundImage = "url("+data[item]+")";
+//
 //     item++;
 //     }
 // };

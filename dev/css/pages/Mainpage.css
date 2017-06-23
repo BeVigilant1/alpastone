@@ -40,6 +40,9 @@ div#preloader {
     background: #fff;
     margin-top: 120px;
     padding: 35px 35px 50px 35px; }
+    .hero__textblock p, .company__textblock p {
+      line-height: 2em;
+      font-size: 0.8em; }
   .hero__button, .company__button {
     cursor: pointer;
     margin-top: 24px;
@@ -93,14 +96,6 @@ div#preloader {
   background-position: center center;
   height: 450px;
   transition: background 5s 0.5s cubic-bezier(0.15, 0.72, 0.43, 0.85); }
-  .decor__block--item:nth-child(2) {
-    background: url("../img/decor_kamin3.jpg") no-repeat; }
-  .decor__block--item:nth-child(3) {
-    background: url("../img/decor_lestnica2.jpg") no-repeat; }
-  .decor__block--item:nth-child(4) {
-    background: url("../img/decor_lestnica2.jpg") no-repeat; }
-  .decor__block--item:nth-child(5) {
-    background: url("../img/decor_lestnica2.jpg") no-repeat; }
   .decor__block--item:hover {
     cursor: pointer;
     background-size: 100%; }
@@ -114,7 +109,7 @@ div#preloader {
     font-size: 1.8em; }
 
 .services__block--item {
-  background: #ebebeb url("../img/decor1.png") no-repeat;
+  background-image: url("../img/decor_kamin2.jpg");
   background-size: 150%;
   background-position: center center;
   background-origin: 10;
