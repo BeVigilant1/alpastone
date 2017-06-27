@@ -85,10 +85,10 @@
     }
     &--item {
       background: url('../img/decor_lestnica2.jpg') no-repeat;
-      background-size: 105%;
+      background-size: 102%;
       background-position: center center;
       height: 450px;
-      transition: background $timing*10 $timing $zoom;
+      transition: background $timing*2 $timing $zoom;
       &:hover {
         cursor:pointer;
         background-size: 100%;
@@ -115,11 +115,11 @@
   &__block {
     &--item {
   background-image: url('../img/decor_kamin2.jpg');
-      background-size: 150%;
+      background-size: 105%;
       background-position: center center;
         background-origin: 10;
       height: 600px;
-      transition: all $timing*12 $zoom;
+      transition: all $timing*2 $zoom;
       margin-bottom: 40px;
       &:hover {
         cursor:pointer;

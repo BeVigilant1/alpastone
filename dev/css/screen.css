@@ -19,7 +19,7 @@ div#preloader {
 
 .spinner {
   position: fixed;
-  animation: scale 6s cubic-bezier(0.15, 0.72, 0.43, 0.85);
+  animation: scale 6s ease-in-out;
   left: calc(50% - 150px);
   top: calc(50% - 150px);
   z-index: 999;
@@ -50,7 +50,7 @@ div#preloader {
 
 .spinner {
   position: fixed;
-  animation: scale 6s cubic-bezier(0.15, 0.72, 0.43, 0.85);
+  animation: scale 6s ease-in-out;
   left: calc(50% - 150px);
   top: calc(50% - 150px);
   z-index: 999;
@@ -152,7 +152,7 @@ div#preloader {
 
 .spinner {
   position: fixed;
-  animation: scale 6s cubic-bezier(0.15, 0.72, 0.43, 0.85);
+  animation: scale 6s ease-in-out;
   left: calc(50% - 150px);
   top: calc(50% - 150px);
   z-index: 999;
@@ -200,7 +200,7 @@ div#preloader {
 
 .spinner {
   position: fixed;
-  animation: scale 6s cubic-bezier(0.15, 0.72, 0.43, 0.85);
+  animation: scale 6s ease-in-out;
   left: calc(50% - 150px);
   top: calc(50% - 150px);
   z-index: 999;
@@ -259,7 +259,7 @@ div#preloader {
 
 .spinner {
   position: fixed;
-  animation: scale 6s cubic-bezier(0.15, 0.72, 0.43, 0.85);
+  animation: scale 6s ease-in-out;
   left: calc(50% - 150px);
   top: calc(50% - 150px);
   z-index: 999;
@@ -321,7 +321,7 @@ div#preloader {
 
 .spinner {
   position: fixed;
-  animation: scale 6s cubic-bezier(0.15, 0.72, 0.43, 0.85);
+  animation: scale 6s ease-in-out;
   left: calc(50% - 150px);
   top: calc(50% - 150px);
   z-index: 999;
@@ -360,12 +360,14 @@ div#preloader {
   font-size: 0.8em;
   margin-top: 15px; }
 .decor__block--item {
+  background: url("../img/decor1.png") no-repeat;
   background-size: cover;
   background-position: center center;
   height: 300px;
   transition: background 2s cubic-bezier(0.86, 0, 0.07, 1); }
   .decor__block--item:hover {
     cursor: pointer;
+    background: url("../img/decor1.png");
     background-repeat: no-repeat; }
     .decor__block--item:hover background-color:rgba(17, 17, 17, .4)
     h2:after {
@@ -396,7 +398,7 @@ div#preloader {
 
 .spinner {
   position: fixed;
-  animation: scale 6s cubic-bezier(0.15, 0.72, 0.43, 0.85);
+  animation: scale 6s ease-in-out;
   left: calc(50% - 150px);
   top: calc(50% - 150px);
   z-index: 999;
@@ -471,10 +473,10 @@ div#preloader {
   min-height: 10px; }
 .decor__block--item {
   background: url("../img/decor_lestnica2.jpg") no-repeat;
-  background-size: 105%;
+  background-size: 102%;
   background-position: center center;
   height: 450px;
-  transition: background 5s 0.5s cubic-bezier(0.15, 0.72, 0.43, 0.85); }
+  transition: background 1s 0.5s ease-in-out; }
   .decor__block--item:hover {
     cursor: pointer;
     background-size: 100%; }
@@ -489,11 +491,11 @@ div#preloader {
 
 .services__block--item {
   background-image: url("../img/decor_kamin2.jpg");
-  background-size: 150%;
+  background-size: 105%;
   background-position: center center;
   background-origin: 10;
   height: 600px;
-  transition: all 6s cubic-bezier(0.15, 0.72, 0.43, 0.85);
+  transition: all 1s ease-in-out;
   margin-bottom: 40px; }
   .services__block--item:hover {
     cursor: pointer;
@@ -501,7 +503,7 @@ div#preloader {
     .services__block--item:hover h2, .services__block--item:hover p {
       opacity: 1; }
 .services__block h2, .services__block p {
-  transition: opacity 0.5s cubic-bezier(0.15, 0.72, 0.43, 0.85); }
+  transition: opacity 0.5s ease-in-out; }
 .services__block h2 {
   color: #fff;
   position: absolute;
@@ -560,7 +562,7 @@ div#preloader {
 
 .spinner {
   position: fixed;
-  animation: scale 6s cubic-bezier(0.15, 0.72, 0.43, 0.85);
+  animation: scale 6s ease-in-out;
   left: calc(50% - 150px);
   top: calc(50% - 150px);
   z-index: 999;
@@ -614,20 +616,27 @@ div#preloader {
 
 .navbar-alt {
   height: 60px;
+  background: rgba(85, 85, 85, 0.25);
   transition: all 1s cubic-bezier(0.86, 0, 0.07, 1); }
   .navbar-alt ul li {
     transition: all 1s cubic-bezier(0.86, 0, 0.07, 1);
     animation: textupAlt 1s cubic-bezier(0.86, 0, 0.07, 1) forwards; }
+    .navbar-alt ul li a {
+      color: #fff; }
   .navbar-alt .navbar__logo {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     top: 0;
-    transition: all 1.5s cubic-bezier(0.86, 0, 0.07, 1); }
+    transition: all 1.5s cubic-bezier(0.86, 0, 0.07, 1);
+    background: rgba(85, 85, 85, 0.25); }
   .navbar-alt .navbar__logo--image {
-    width: 75px;
-    height: 75px;
-    margin: 12px;
-    transition: all 1.5s cubic-bezier(0.86, 0, 0.07, 1); }
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    z-index: 100;
+    margin: 0;
+    transition: all 1.5s cubic-bezier(0.86, 0, 0.07, 1);
+    background: url("../../img/logo_white.png"); }
 
 @keyframes textup {
   0% {

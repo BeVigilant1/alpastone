@@ -17,7 +17,7 @@ div#preloader {
 
 .spinner {
   position: fixed;
-  animation: scale 6s cubic-bezier(0.15, 0.72, 0.43, 0.85);
+  animation: scale 6s ease-in-out;
   left: calc(50% - 150px);
   top: calc(50% - 150px);
   z-index: 999;
@@ -71,20 +71,27 @@ div#preloader {
 
 .navbar-alt {
   height: 60px;
+  background: rgba(85, 85, 85, 0.25);
   transition: all 1s cubic-bezier(0.86, 0, 0.07, 1); }
   .navbar-alt ul li {
     transition: all 1s cubic-bezier(0.86, 0, 0.07, 1);
     animation: textupAlt 1s cubic-bezier(0.86, 0, 0.07, 1) forwards; }
+    .navbar-alt ul li a {
+      color: #fff; }
   .navbar-alt .navbar__logo {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     top: 0;
-    transition: all 1.5s cubic-bezier(0.86, 0, 0.07, 1); }
+    transition: all 1.5s cubic-bezier(0.86, 0, 0.07, 1);
+    background: rgba(85, 85, 85, 0.25); }
   .navbar-alt .navbar__logo--image {
-    width: 75px;
-    height: 75px;
-    margin: 12px;
-    transition: all 1.5s cubic-bezier(0.86, 0, 0.07, 1); }
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    z-index: 100;
+    margin: 0;
+    transition: all 1.5s cubic-bezier(0.86, 0, 0.07, 1);
+    background: url("../../img/logo_white.png"); }
 
 @keyframes textup {
   0% {

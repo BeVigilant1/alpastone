@@ -8,7 +8,7 @@ $(window).load(function(){
 
 
 $(function() {
-    var navbar = $(".navbar");
+    const navbar = $(".navbar");
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         if (scroll >= 50) {

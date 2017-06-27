@@ -3,7 +3,7 @@
 $colorLightGrey: #ebebeb;
 $colorGrey: #555555;
 $colorDark: #222222;
-
+$transparent:rgba(85, 85, 85, .25);
 
 /* ===TYPOGRAPHY=== */
 
@@ -13,7 +13,7 @@ $timing: .5s;
 
 /* ===EASINGS=== */
 $easing: cubic-bezier(0.860, 0.000, 0.070, 1.000);
-$zoom: cubic-bezier(.15,.72,.43,.85);
+$zoom: ease-in-out;
 
 
 /* ===TYPOGRAPHY=== */

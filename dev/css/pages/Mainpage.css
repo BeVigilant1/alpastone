@@ -17,7 +17,7 @@ div#preloader {
 
 .spinner {
   position: fixed;
-  animation: scale 6s cubic-bezier(0.15, 0.72, 0.43, 0.85);
+  animation: scale 6s ease-in-out;
   left: calc(50% - 150px);
   top: calc(50% - 150px);
   z-index: 999;
@@ -92,10 +92,10 @@ div#preloader {
   min-height: 10px; }
 .decor__block--item {
   background: url("../img/decor_lestnica2.jpg") no-repeat;
-  background-size: 105%;
+  background-size: 102%;
   background-position: center center;
   height: 450px;
-  transition: background 5s 0.5s cubic-bezier(0.15, 0.72, 0.43, 0.85); }
+  transition: background 1s 0.5s ease-in-out; }
   .decor__block--item:hover {
     cursor: pointer;
     background-size: 100%; }
@@ -110,11 +110,11 @@ div#preloader {
 
 .services__block--item {
   background-image: url("../img/decor_kamin2.jpg");
-  background-size: 150%;
+  background-size: 105%;
   background-position: center center;
   background-origin: 10;
   height: 600px;
-  transition: all 6s cubic-bezier(0.15, 0.72, 0.43, 0.85);
+  transition: all 1s ease-in-out;
   margin-bottom: 40px; }
   .services__block--item:hover {
     cursor: pointer;
@@ -122,7 +122,7 @@ div#preloader {
     .services__block--item:hover h2, .services__block--item:hover p {
       opacity: 1; }
 .services__block h2, .services__block p {
-  transition: opacity 0.5s cubic-bezier(0.15, 0.72, 0.43, 0.85); }
+  transition: opacity 0.5s ease-in-out; }
 .services__block h2 {
   color: #fff;
   position: absolute;

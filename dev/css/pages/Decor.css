@@ -17,7 +17,7 @@ div#preloader {
 
 .spinner {
   position: fixed;
-  animation: scale 6s cubic-bezier(0.15, 0.72, 0.43, 0.85);
+  animation: scale 6s ease-in-out;
   left: calc(50% - 150px);
   top: calc(50% - 150px);
   z-index: 999;

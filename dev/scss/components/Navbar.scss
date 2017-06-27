@@ -51,21 +51,29 @@
   ul li {
     transition:all $timing*2 $easing;
     animation: textupAlt $timing*2 $easing forwards;
+  a{
+  color: #fff;
+}
   }
   height: 60px;
+  background:$transparent;
   transition:all $timing*2 $easing;
   .navbar__logo {
     @extend .navbar__logo;
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     top:0;
     transition: all $timing*3 $easing;
+    background:$transparent;
   }
   .navbar__logo--image {
-    width: 75px;
-    height: 75px;
-    margin:12px;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    z-index: 100;
+    margin:0;
     transition: all $timing*3 $easing;
+    background: url('../../img/logo_white.png');
 
   }
 }
