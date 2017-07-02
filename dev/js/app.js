@@ -2,6 +2,27 @@ jQuery(document).ready(function($) {
 $(window).load(function(){
   $('#preloader').fadeOut('slow',function(){$(this).remove();});
 });
+});
+
+// function openNav() {
+//     document.getElementById("overlay").style.width = "100%";
+// }
+
+// function closeNav() {
+//     document.getElementById("overlay").style.width = "0%";
+// }
+$( ".overlay" ).hide();
+$(document).ready(function(){
+
+    $('#nav-icon1').click(function(){
+        $(this).toggleClass('open');
+        $( '.overlay' ).show();
+
+    });
+    $('.open').click(function(){
+        $( '#nav-icon1', '.overlay' ).hide();
+
+    });
 
 });
 
