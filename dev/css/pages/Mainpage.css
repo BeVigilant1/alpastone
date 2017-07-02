@@ -91,11 +91,10 @@ div#preloader {
   margin-top: 15px;
   min-height: 10px; }
 .decor__block--item {
-  background: url("../img/decor_lestnica2.jpg") no-repeat;
-  background-size: 102%;
+  background-size: 105%;
   background-position: center center;
   height: 450px;
-  transition: background 1s 0.5s ease-in-out; }
+  transition: all 1s ease-in-out; }
   .decor__block--item:hover {
     cursor: pointer;
     background-size: 100%; }
@@ -107,6 +106,21 @@ div#preloader {
     top: 80%;
     left: 5%;
     font-size: 1.8em; }
+
+#decor__block--ladder {
+  background: url("../img/decor_lestnica2.jpg") no-repeat; }
+
+#decor__block--fireplace {
+  background: url("../img/decor_kamin3.jpg") no-repeat; }
+
+#decor__block--table {
+  background: url("../img/decor_stol.jpg") no-repeat; }
+
+#decor__block--accsess {
+  background: url("../img/decor_accses.jpg") no-repeat; }
+
+#decor__block--floor {
+  background: url("../img/decor_oblicovka_pola.jpg") no-repeat; }
 
 .services__block--item {
   background-image: url("../img/decor_kamin2.jpg");
@@ -136,6 +150,22 @@ div#preloader {
   bottom: 115px;
   left: 40px;
   opacity: 0; }
+
+#services__block--ladder {
+  background: url("../img/decor_lestnica2.jpg") no-repeat;
+  background-size: 100%; }
+
+#services__block--fireplace {
+  background: url("../img/decor_kamin4.jpg") no-repeat;
+  background-size: 100%; }
+
+#services__block--table {
+  background: url("../img/decor_stol2.jpg") no-repeat;
+  background-size: 100%; }
+
+#services__block--floor {
+  background: url("../img/decor_oblicovka_pola2.jpg") no-repeat;
+  background-size: 100%; }
 
 .footer {
   background-color: #222222;

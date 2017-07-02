@@ -5,7 +5,7 @@
 }
 
 .decorPage {
-  margin-top:100px;
+  margin-top:120px;
   h1 {
     text-align: right;
     margin-bottom: 100px;
@@ -37,14 +37,12 @@
     margin-top: 15px;
     }
     &--item {
-      background: url('../img/decor1.png') no-repeat;
       background-size: cover;
       background-position: center center;
       height: 300px;
       transition: background $timing*4 $easing;
       &:hover {
         cursor:pointer;
-        background:url('../img/decor1.png') ;
         background-repeat: no-repeat;
         background-color:rgba(17, 17, 17, .4)
         h2 {
@@ -62,5 +60,22 @@
       }
     }
   }
+}
+
+#decor__block--ladder{
+      background: url('../img/decor_lestnica2.jpg') no-repeat;
+
+  }
+#decor__block--fireplace {
+   background: url('../img/decor_kamin3.jpg') no-repeat;
+}
+#decor__block--table {
+   background: url('../img/decor_stol.jpg') no-repeat;
+}
+#decor__block--accsess {
+   background: url('../img/decor_accses.jpg') no-repeat;
+}
+#decor__block--floor {
+   background: url('../img/decor_oblicovka_pola.jpg') no-repeat;
 }
 
