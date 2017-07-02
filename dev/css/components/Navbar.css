@@ -79,19 +79,18 @@ div#preloader {
     .navbar-alt ul li a {
       color: #fff; }
   .navbar-alt .navbar__logo {
+    background: white;
     width: 60px;
     height: 60px;
     top: 0;
-    transition: all 1.5s cubic-bezier(0.86, 0, 0.07, 1);
-    background: rgba(85, 85, 85, 0.25); }
+    transition: all 1.5s cubic-bezier(0.86, 0, 0.07, 1); }
   .navbar-alt .navbar__logo--image {
     width: 60px;
     height: 60px;
     position: fixed;
     z-index: 100;
     margin: 0;
-    transition: all 1.5s cubic-bezier(0.86, 0, 0.07, 1);
-    background: url("../../img/logo_white.png"); }
+    transition: all 1.5s cubic-bezier(0.86, 0, 0.07, 1); }
 
 @keyframes textup {
   0% {

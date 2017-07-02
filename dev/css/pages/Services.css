@@ -1,35 +1,61 @@
-/*
-Sass::SyntaxError: ".services__showcase--small" failed to @extend ".usecase__showcase".
-The selector ".usecase__showcase" was not found.
-Use "@extend .usecase__showcase !optional" if the extend should be able to fail.
+/* ===COLORS=== */
+/* ===TYPOGRAPHY=== */
+/* ===EASINGS=== */
+/* ===TYPOGRAPHY=== */
+/* ===MIXINS=== */
+/* ===MISC=== */
+/* ===PRELOADER=== */
+div#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #555555 no-repeat center center; }
 
+.spinner {
+  position: fixed;
+  animation: scale 6s ease-in-out;
+  left: calc(50% - 150px);
+  top: calc(50% - 150px);
+  z-index: 999;
+  width: 300px;
+  height: 300px; }
 
-Backtrace:
-scss/pages/Services.scss:19
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/extend.rb:62:in `block in check_extends_fired!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/util/subset_map.rb:105:in `block in each_value'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/util/subset_map.rb:105:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/util/subset_map.rb:105:in `each_value'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/extend.rb:51:in `check_extends_fired!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/extend.rb:16:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:39:in `css_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:471:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Sass::SyntaxError: \".services__showcase--small\" failed to @extend \".usecase__showcase\".\A The selector \".usecase__showcase\" was not found.\A Use \"@extend .usecase__showcase !optional\" if the extend should be able to fail.\A "; }
+@keyframes scale {
+  0% {
+    transform: scaleX(0.1); }
+  100% {
+    transform: scaleX(1); } }
+.services {
+  margin-top: 120px; }
+  .services h1 {
+    text-align: right; }
+  .services h2 {
+    text-align: left; }
+  .services p {
+    font-size: 1em;
+    margin-top: 0; }
+  .services__showcase, .services__showcase--small {
+    width: 100%; }
+  .services__label {
+    color: #ebebeb;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 35px; }
+  .services__left, .services__right {
+    height: 100px;
+    background-color: #ebebeb;
+    color: #555555;
+    font-size: 4em;
+    user-select: none;
+    opacity: .7; }
+    .services__left:hover, .services__right:hover {
+      color: #fff;
+      cursor: pointer;
+      opacity: 1; }
+
+/*# sourceMappingURL=Services.css.map */

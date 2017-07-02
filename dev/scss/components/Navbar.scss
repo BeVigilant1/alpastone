@@ -2,79 +2,88 @@
 
 .navbar {
   position: fixed;
-  top:0;
+  top: 0;
   left: 0;
   height: 100px;
   width: 100%;
   background: $colorLightGrey;
   border: none;
   z-index: 666;
-  transition: all $timing*3 $easing;
+  transition: all ($timing * 3) $easing;
 
   ul {
     list-style: none;
-    li{
+
+    li {
       display: inline-block;
       list-style: none;
       text-transform: uppercase;
       font-weight: light;
-      animation: textup $timing*3 $easing forwards;
+      animation: textup ($timing * 3) $easing forwards;
       transition: padding $timing $easing;
       position: relative;
       padding: 0 20px;
       left: -10px;
-      a{
-        color:$colorDark;
+
+      a {
+        color: $colorDark;
       }
     }
   }
+
   &__logo {
     position: fixed;
-    top:35px;
+    top: 35px;
     left: 35px;
     background: $colorLightGrey;
     width: 250px;
     height: 250px;
     border-radius: 50%;
     vertical-align: middle;
-    transition:all $timing*4 $easing;
+    transition: all ($timing * 4) $easing;
+
     &--image {
-    width: 200px;
-    height: 200px;
-    margin: 25px;
-    transition: all $timing*4 $easing;
+      width: 200px;
+      height: 200px;
+      margin: 25px;
+      transition: all ($timing * 4) $easing;
     }
   }
 }
+
 .navbar-alt {
   @extend .navbar;
+
   ul li {
-    transition:all $timing*2 $easing;
-    animation: textupAlt $timing*2 $easing forwards;
-  a{
-  color: #fff;
-}
+    transition: all ($timing * 2) $easing;
+    animation: textupAlt ($timing * 2) $easing forwards;
+
+    a {
+      color: #fff;
+    }
   }
+
   height: 60px;
-  background:$transparent;
-  transition:all $timing*2 $easing;
+  background: $transparent;
+  transition: all ($timing * 2) $easing;
+
   .navbar__logo {
     @extend .navbar__logo;
+
+    background: rgba(255, 255, 255, 1);
     width: 60px;
     height: 60px;
-    top:0;
-    transition: all $timing*3 $easing;
-    background:$transparent;
+    top: 0;
+    transition: all ($timing * 3) $easing;
   }
+
   .navbar__logo--image {
     width: 60px;
     height: 60px;
     position: fixed;
     z-index: 100;
-    margin:0;
-    transition: all $timing*3 $easing;
-    background: url('../../img/logo_white.png');
-
+    margin: 0;
+    transition: all ($timing * 3) $easing;
   }
 }
 
@@ -82,15 +91,18 @@
   0% {
     top: 20px;
   }
-100% {
-    top:40px;
+
+  100% {
+    top: 40px;
+  }
 }
-}
+
 @keyframes textupAlt {
   0% {
     top: 40px;
   }
-100% {
-    top:20px;
-}
+
+  100% {
+    top: 20px;
+  }
 }
