@@ -6,7 +6,7 @@
 /* ===MIXINS=== */
 /* ===MISC=== */
 /* ===PRELOADER=== */
-@import "//fonts.fontstorage.com/import/qolyazma.css";
+@import "//fonts.fontstorage.com/import/mintspirittwo.css";
 div#preloader {
   position: fixed;
   left: 0;
@@ -81,7 +81,7 @@ h1, h2, h3 {
   margin: 10px 0 40px 0;
   line-height: normal;
   white-space: normal;
-  font-family: 'UKIJ Qolyazma'; }
+  font-family: 'Mint Spirit No2'; }
 
 h2 {
   font-size: 1.3em;
@@ -167,13 +167,16 @@ div#preloader {
 .contacts {
   background: #555555;
   margin-top: 100px; }
+  .contacts__text {
+    margin: 20px auto;
+    max-width: 320px; }
   .contacts h1, .contacts h2, .contacts h3 {
     text-align: center;
     color: #ebebeb; }
   .contacts p {
-    text-align: center;
+    text-align: left;
     color: #ebebeb;
-    padding-bottom: 35px; }
+    padding-bottom: 10px; }
 
 .texter {
   font-size: 0.8em;
@@ -628,7 +631,8 @@ div#preloader {
   background: #ebebeb;
   border: none;
   z-index: 666;
-  transition: all 1.5s cubic-bezier(0.86, 0, 0.07, 1); }
+  transition: all 1.5s cubic-bezier(0.86, 0, 0.07, 1);
+  font-family: 'Mint Spirit No2'; }
   @media (max-width: 768px) {
     .navbar, .navbar-alt {
       display: none; } }

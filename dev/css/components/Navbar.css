@@ -39,7 +39,8 @@ div#preloader {
   background: #ebebeb;
   border: none;
   z-index: 666;
-  transition: all 1.5s cubic-bezier(0.86, 0, 0.07, 1); }
+  transition: all 1.5s cubic-bezier(0.86, 0, 0.07, 1);
+  font-family: 'Mint Spirit No2'; }
   @media (max-width: 768px) {
     .navbar, .navbar-alt {
       display: none; } }

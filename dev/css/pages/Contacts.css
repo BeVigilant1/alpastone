@@ -32,13 +32,16 @@ div#preloader {
 .contacts {
   background: #555555;
   margin-top: 100px; }
+  .contacts__text {
+    margin: 20px auto;
+    max-width: 320px; }
   .contacts h1 {
     text-align: center;
     color: #ebebeb; }
   .contacts p {
-    text-align: center;
+    text-align: left;
     color: #ebebeb;
-    padding-bottom: 35px; }
+    padding-bottom: 10px; }
 
 .texter {
   font-size: 0.8em;
