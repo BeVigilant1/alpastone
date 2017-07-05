@@ -6,213 +6,238 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
-  background-image: url('../img/decor_fantomas.jpg');
+  background-image: url("../img/decor_kitchen.jpg");
+
   &__textblock {
     background: #fff;
     margin-top: 120px;
     padding: 35px 35px 50px 35px;
-    p {
-    line-height: 2em;
-    font-size: $small;
 
+    p {
+      line-height: 2em;
+      font-size: $small;
     }
   }
+
   &__button {
-  cursor: pointer;
-  margin-top: 24px;
-  padding: 20px 40px;
-  background: transparent;
-      color:$colorDark;
-  border-radius: 0;
-      z-index: 1;
-      position: relative;
-      overflow: hidden;
-      transition: color $timing $easing;
-      text-transform: uppercase;
-      letter-spacing: .1em;
-      border:none;
-      @include shadow();
+    cursor: pointer;
+    margin-top: 24px;
+    padding: 20px 40px;
+    background: transparent;
+    color: $colorDark;
+    border-radius: 0;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    transition: color $timing $easing;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    border: none;
+
+    @include shadow;
+
     &:before {
-      content:'';
+      content: '';
       display: block;
       height: 0;
       width: 100%;
       height: 100%;
-      bottom:0;
-      left:0;
-      background-color:$colorLightGrey;
-      position:absolute;
+      bottom: 0;
+      left: 0;
+      background-color: $colorLightGrey;
+      position: absolute;
       z-index: -20;
       transform: scaleY(0);
-      transition: height $timing $easing, transform $timing $easing  ;
+      transition: height $timing $easing, transform $timing $easing;
     }
-  &:hover {
-    box-shadow: none;
-    color:$colorGrey;
-    &:before {
-      transform: scaleY(1);
+
+    &:hover {
+      box-shadow: none;
+      color: $colorGrey;
+
+      &:before {
+        transform: scaleY(1);
+      }
     }
-  }
   }
 }
-
 
 .company {
   @extend .hero;
+
   margin-top: 0;
   background: #fff;
+
   &__textblock {
     @extend .hero__textblock;
-    margin-top: 120px;
 
+    margin-top: 120px;
   }
+
   &__button {
     @extend .hero__button;
   }
+
   &__image {
-    overflow:hidden;
+    overflow: hidden;
     margin-top: 120px;
   }
 }
-
 
 .decor {
   &__block {
     p {
-    font-size: $small;
-    margin-top: 15px;
-    min-height: 10px;
+      font-size: $small;
+      margin-top: 15px;
+      min-height: 10px;
     }
+
     &--item {
       background-size: 105%;
       background-position: center center;
       height: 450px;
-      transition: all $timing*2  $zoom;
+      transition: all ($timing * 2) $zoom;
+
       &:hover {
-        cursor:pointer;
+        cursor: pointer;
         background-size: 100%;
+
         h2 {
-        &:after {
-        display: block;
-        }
+          &:after {
+            display: block;
+          }
         }
       }
+
       h2 {
-        color:#fff;
+        color: #fff;
         position: relative;
         top: 80%;
-        left:5%;
+        left: 5%;
         font-size: $xmedium;
       }
     }
   }
 }
 
-#decor__block--ladder{
-      background: url('../img/decor_lestnica2.jpg') no-repeat;
+#decor__block--ladder {
+  background: url("../img/decor_lestnica2.jpg") no-repeat;
+}
 
-  }
 #decor__block--fireplace {
-   background: url('../img/decor_kamin3.jpg') no-repeat;
-}
-#decor__block--table {
-   background: url('../img/decor_stol.jpg') no-repeat;
-}
-#decor__block--accsess {
-   background: url('../img/decor_accses.jpg') no-repeat;
-}
-#decor__block--floor {
-   background: url('../img/decor_oblicovka_pola.jpg') no-repeat;
+  background: url("../img/decor_kamin3.jpg") no-repeat;
 }
 
+#decor__block--table {
+  background: url("../img/decor_stol.jpg") no-repeat;
+}
+
+#decor__block--accsess {
+  background: url("../img/decor_accses.jpg") no-repeat;
+}
+
+#decor__block--floor {
+  background: url("../img/decor_oblicovka_pola.jpg") no-repeat;
+}
 
 .services {
   &__block {
     &--item {
-  background-image: url('../img/decor_kamin2.jpg');
+      background-image: url("../img/decor_kamin2.jpg");
       background-size: 105%;
       background-position: center center;
-        background-origin: 10;
+      background-origin: 10;
       height: 600px;
-      transition: all $timing*2 $zoom;
+      transition: all ($timing * 2) $zoom;
       margin-bottom: 40px;
+
       &:hover {
-        cursor:pointer;
-        background-size:  100%;
-        h2,p {
+        cursor: pointer;
+        background-size: 100%;
+
+        h2, p {
           opacity: 1;
         }
-        }
-      }
-      h2, p {
-        transition: opacity $timing $zoom;
-      }
-      h2 {
-        color:#fff;
-        position: absolute;
-        bottom: 180px;
-        left:40px;
-        font-size: $large;
-        opacity:0;
-      }
-      p {
-        color:#fff;
-        position: absolute;
-        bottom: 115px;
-        left:40px;
-        opacity:0;
-
       }
     }
+
+    h2, p {
+      transition: opacity $timing $zoom;
+    }
+
+    h2 {
+      color: #fff;
+      position: absolute;
+      bottom: 180px;
+      left: 40px;
+      font-size: $large;
+      opacity: 0;
+    }
+
+    p {
+      color: #fff;
+      position: absolute;
+      bottom: 115px;
+      left: 40px;
+      opacity: 0;
+    }
   }
+}
 
 #services__block--ladder {
-      background: url('../img/decor_lestnica2.jpg') no-repeat;
-      background-size: 100%;
+  background: url("../img/decor_lestnica2.jpg") no-repeat;
+  background-size: 100%;
 }
+
 #services__block--fireplace {
-      background: url('../img/decor_kamin4.jpg') no-repeat;
-      background-size: 100%;
+  background: url("../img/decor_kamin4.jpg") no-repeat;
+  background-size: 100%;
 }
 
 #services__block--table {
-      background: url('../img/decor_stol2.jpg') no-repeat;
-      background-size: 100%;
+  background: url("../img/decor_stol2.jpg") no-repeat;
+  background-size: 100%;
 }
 
 #services__block--floor {
-      background: url('../img/decor_oblicovka_pola2.jpg') no-repeat;
-      background-size: 100%;
-
+  background: url("../img/decor_oblicovka_pola2.jpg") no-repeat;
+  background-size: 100%;
 }
 
 .footer {
   background-color: $colorDark;
   color: $colorLightGrey;
   height: 200px;
+
   &__info {
     padding-left: 30px;
+
     h2 {
       padding-left: 20px;
     }
+
     ul {
-    list-style: none;
-    padding: 0;
-    li{
-      display: inline-block;
       list-style: none;
-      text-transform: uppercase;
-      font-weight: light;
-      padding: 20px 20px 20px 20px;
-      transition: padding $timing $easing;
-      a{
-        color:$colorGrey;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        list-style: none;
+        text-transform: uppercase;
+        font-weight: light;
+        padding: 20px 20px 20px 20px;
+        transition: padding $timing $easing;
+
+        a {
+          color: $colorGrey;
+        }
       }
     }
   }
-  }
+
   &__social {
     padding-left: 30px;
+
     &--link {
       padding: 0 15px 0 0;
     }
