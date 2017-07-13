@@ -9,6 +9,8 @@
   background-image: url("../img/decor_kitchen.jpg");
   @media (max-width: 768px) {
   height: 720px;
+  background-repeat: no-repeat;
+  background-size: contain;
     }
 
   &__textblock {

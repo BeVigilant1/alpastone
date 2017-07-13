@@ -38,7 +38,9 @@ div#preloader {
   background-image: url("../img/decor_kitchen.jpg"); }
   @media (max-width: 768px) {
     .hero, .company {
-      height: 720px; } }
+      height: 720px;
+      background-repeat: no-repeat;
+      background-size: contain; } }
   .hero__textblock, .company__textblock {
     background: #fff;
     margin-top: 120px;
