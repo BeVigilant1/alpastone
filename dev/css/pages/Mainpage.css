@@ -40,6 +40,9 @@ div#preloader {
     background: #fff;
     margin-top: 120px;
     padding: 35px 35px 50px 35px; }
+    @media (max-width: 768px) {
+      .hero__textblock, .company__textblock {
+        margin-top: 215px; } }
     .hero__textblock p, .company__textblock p {
       line-height: 2em;
       font-size: 0.8em; }

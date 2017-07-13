@@ -13,15 +13,13 @@ $(window).load(function(){
 // }
 $( ".overlay" ).hide();
 $(document).ready(function(){
-
     $('#nav-icon1').click(function(){
         $(this).toggleClass('open');
-        $( '.overlay' ).show();
-
-    });
-    $('.open').click(function(){
-        $( '#nav-icon1', '.overlay' ).hide();
-
+        if ($('#nav-icon1').hasClass('open')) {
+            $( ".overlay" ).show();
+        } else {
+        $( '.overlay' ).hide();
+        }
     });
 
 });
