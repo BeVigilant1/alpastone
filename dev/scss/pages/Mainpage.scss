@@ -7,6 +7,9 @@
   background-size: cover;
   background-position: center center;
   background-image: url("../img/decor_kitchen.jpg");
+  @media (max-width: 768px) {
+  height: 720px;
+    }
 
   &__textblock {
     background: #fff;
@@ -14,7 +17,7 @@
     padding: 35px 35px 50px 35px;
 
     @media (max-width: 768px) {
-    margin-top: 215px;
+    margin-top: 295px;
     }
     p {
       line-height: 2em;
