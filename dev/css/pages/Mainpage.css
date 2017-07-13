@@ -125,6 +125,9 @@ div#preloader {
 #decor__block--floor {
   background: url("../img/decor_oblicovka_pola.jpg") no-repeat; }
 
+#decor__block--paint {
+  background: url("../img/decor_paint1.jpg") no-repeat; }
+
 .services__block--item {
   background-image: url("../img/decor_kamin2.jpg");
   background-size: 105%;
