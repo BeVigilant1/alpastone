@@ -40,7 +40,8 @@ div#preloader {
     .hero, .company {
       height: 720px;
       background-repeat: no-repeat;
-      background-size: contain; } }
+      background-size: contain;
+      background-position: center 60px; } }
   .hero__textblock, .company__textblock {
     background: #fff;
     margin-top: 120px;
