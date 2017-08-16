@@ -222,7 +222,9 @@
   background-color: $colorDark;
   color: $colorLightGrey;
   height: 200px;
-
+  a:hover {
+    text-decoration: none;
+  }
   &__info {
     padding-left: 30px;
 

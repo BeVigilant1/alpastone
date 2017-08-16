@@ -584,6 +584,8 @@ div#preloader {
   background-color: #222222;
   color: #ebebeb;
   height: 200px; }
+  .footer a:hover {
+    text-decoration: none; }
   .footer__info {
     padding-left: 30px; }
     .footer__info h2 {
