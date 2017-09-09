@@ -29,8 +29,101 @@ div#preloader {
     transform: scaleX(0.1); }
   100% {
     transform: scaleX(1); } }
+/* ===COLORS=== */
+/* ===TYPOGRAPHY=== */
+/* ===EASINGS=== */
+/* ===TYPOGRAPHY=== */
+/* ===MIXINS=== */
+/* ===MISC=== */
+/* ===PRELOADER=== */
+div#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #555555 no-repeat center center; }
+
+.spinner {
+  position: fixed;
+  animation: scale 6s ease-in-out;
+  left: calc(50% - 150px);
+  top: calc(50% - 150px);
+  z-index: 999;
+  width: 300px;
+  height: 300px; }
+
+@keyframes scale {
+  0% {
+    transform: scaleX(0.1); }
+  100% {
+    transform: scaleX(1); } }
+.topblock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300px;
+  width: 100%;
+  background: #fff;
+  border: none;
+  z-index: 666;
+  transition: all 1.5s cubic-bezier(0.86, 0, 0.07, 1);
+  font-family: 'Mint Spirit No2';
+  border-bottom: 1px solid #555555; }
+  @media (max-width: 768px) {
+    .topblock {
+      display: none; } }
+  .topblock p {
+    margin-left: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em; }
+  .topblock span {
+    text-decoration: underline;
+    padding-right: 10px;
+    display: block; }
+  .topblock__logo {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; }
+    .topblock__logo--image {
+      width: 175px;
+      height: 175px;
+      transition: all 2s cubic-bezier(0.86, 0, 0.07, 1); }
+    .topblock__logo__number {
+      flex: 1;
+      font-size: 1.8em; }
+    .topblock__logo--phone {
+      display: flex; }
+      .topblock__logo--phone p {
+        display: flex;
+        font-size: 0.8em; }
+    .topblock__logo__social {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 0 !important;
+      min-width: 150px; }
+
+.topblock__social {
+  margin-right: 20px; }
+
+.topblock__social--link img {
+  border: 1px solid #555555;
+  padding: 10px; }
+  .topblock__social--link img:hover {
+    opacity: .7; }
+
 .hero, .company {
-  margin-top: 60px;
+  margin-top: 230px;
   height: 640px;
   background-attachment: fixed;
   background-size: cover;
@@ -44,8 +137,9 @@ div#preloader {
       background-position: center 60px; } }
   .hero__textblock, .company__textblock {
     background: #fff;
-    margin-top: 120px;
-    padding: 35px 35px 50px 35px; }
+    margin-top: 180px;
+    padding: 35px 35px 50px 35px;
+    border: 1px solid #222222; }
     @media (max-width: 768px) {
       .hero__textblock, .company__textblock {
         margin-top: 295px; } }
@@ -65,7 +159,7 @@ div#preloader {
     transition: color 0.5s cubic-bezier(0.86, 0, 0.07, 1);
     text-transform: uppercase;
     letter-spacing: .1em;
-    border: none;
+    border: 1px solid #222222;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); }
     .hero__button:before, .company__button:before {
       content: '';
@@ -90,49 +184,82 @@ div#preloader {
   margin-top: 0;
   background: #fff; }
   .company__textblock {
-    margin-top: 120px; }
+    margin-top: 50px; }
   .company__image {
     overflow: hidden;
-    margin-top: 120px; }
+    margin-top: 50px; }
 
-.decor__block p {
-  font-size: 0.8em;
-  margin-top: 15px;
-  min-height: 10px; }
+.decor {
+  display: flex;
+  width: 100%; }
+  .decor .article {
+    border: 1px solid #555555;
+    height: 150px; }
+  .decor__block {
+    transition: all 1s ease-in-out; }
+    .decor__block:hover {
+      background: rgba(85, 85, 85, 0.25); }
+    .decor__block p {
+      font-size: 0.7em;
+      margin-top: 0;
+      min-height: 10px;
+      padding: 0 80px; }
+    .decor__block--item {
+      background-size: 105%;
+      background-position: center center;
+      height: 300px;
+      transition: all 1s ease-in-out; }
+      .decor__block--item:hover {
+        cursor: pointer;
+        background-size: 100%; }
+        .decor__block--item:hover h2:after {
+          display: block; }
+      .decor__block--item h2 {
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        position: relative;
+        font-size: 1.3em; }
+      .decor__block--item p {
+        font-size: 0.8em;
+        margin-top: 15px;
+        min-height: 10px; }
+
+.decor a {
+  width: 50%;
+  text-decoration: none;
+  color: #222222;
+  margin-top: 20px;
+  overflow: hidden; }
+
 .decor__block--item {
-  background-size: 105%;
-  background-position: center center;
-  height: 450px;
-  transition: all 1s ease-in-out; }
-  .decor__block--item:hover {
-    cursor: pointer;
-    background-size: 100%; }
-    .decor__block--item:hover h2:after {
-      display: block; }
-  .decor__block--item h2 {
-    color: #fff;
-    position: relative;
-    top: 80%;
-    left: 5%;
-    font-size: 1.8em; }
+  height: 220px; }
 
 #decor__block--ladder {
-  background: url("../img/decor_lestnica2.jpg") no-repeat; }
+  background: url("../img/decor_lestnica2.jpg") no-repeat;
+  background-size: cover; }
 
 #decor__block--fireplace {
-  background: url("../img/decor_kamin3.jpg") no-repeat; }
+  background: url("../img/decor_kamin3.jpg") no-repeat;
+  background-size: cover; }
 
 #decor__block--table {
-  background: url("../img/decor_stol.jpg") no-repeat; }
+  background: url("../img/decor_stol.jpg") no-repeat;
+  background-size: cover; }
 
 #decor__block--accsess {
-  background: url("../img/decor_accses.jpg") no-repeat; }
+  background: url("../img/decor_accses.jpg") no-repeat;
+  background-size: cover; }
 
 #decor__block--floor {
-  background: url("../img/decor_oblicovka_pola.jpg") no-repeat; }
+  background: url("../img/decor_oblicovka_pola.jpg") no-repeat;
+  background-size: cover; }
 
 #decor__block--paint {
-  background: url("../img/decor_paint1.jpg") no-repeat; }
+  background: url("../img/decor_paint1.jpg") no-repeat;
+  background-size: cover; }
 
 .services__block--item {
   background-image: url("../img/decor_kamin2.jpg");

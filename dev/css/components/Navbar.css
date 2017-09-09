@@ -30,7 +30,7 @@ div#preloader {
   100% {
     transform: scaleX(1); } }
 .navbar, .navbar-alt {
-  display: block;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -40,10 +40,20 @@ div#preloader {
   border: none;
   z-index: 666;
   transition: all 1.5s cubic-bezier(0.86, 0, 0.07, 1);
-  font-family: 'Mint Spirit No2'; }
-  @media (max-width: 768px) {
-    .navbar, .navbar-alt {
-      display: none; } }
+  border-bottom: 1px solid #555555; }
+  .navbar:after, .navbar-alt:after {
+    content: 'Alpastone';
+    color: #555555;
+    font-size: 1em;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    animation: textupAlt 1.5s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+    transition: padding 0.5s cubic-bezier(0.86, 0, 0.07, 1); }
   .navbar ul, .navbar-alt ul {
     list-style: none; }
     .navbar ul li, .navbar-alt ul li {
@@ -51,7 +61,7 @@ div#preloader {
       list-style: none;
       text-transform: uppercase;
       font-weight: light;
-      animation: textup 1.5s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+      animation: textupAlt 1.5s cubic-bezier(0.86, 0, 0.07, 1) forwards;
       transition: padding 0.5s cubic-bezier(0.86, 0, 0.07, 1);
       position: relative;
       padding: 0 20px;
@@ -60,14 +70,15 @@ div#preloader {
         color: #222222; }
   .navbar__logo, .navbar-alt .navbar__logo, .navbar__logo--mobile {
     position: fixed;
-    top: 35px;
+    top: -30px;
     left: 35px;
     background: #ebebeb;
     width: 250px;
     height: 250px;
     border-radius: 50%;
     vertical-align: middle;
-    transition: all 2s cubic-bezier(0.86, 0, 0.07, 1); }
+    animation: textupAlt 1.5s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+    transition: padding 0.5s cubic-bezier(0.86, 0, 0.07, 1); }
     .navbar__logo--image {
       width: 200px;
       height: 200px;
@@ -75,19 +86,20 @@ div#preloader {
       transition: all 2s cubic-bezier(0.86, 0, 0.07, 1); }
 
 .navbar-alt {
+  display: block;
   height: 60px;
-  background: rgba(85, 85, 85, 0.25);
+  background: #FFF;
   transition: all 1s cubic-bezier(0.86, 0, 0.07, 1); }
   .navbar-alt ul li {
     transition: all 1s cubic-bezier(0.86, 0, 0.07, 1);
-    animation: textupAlt 1s cubic-bezier(0.86, 0, 0.07, 1) forwards; }
+    animation: textupAlt 1s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+    top: 0px; }
     .navbar-alt ul li a {
-      color: #fff; }
+      color: black; }
   .navbar-alt .navbar__logo, .navbar-alt .navbar__logo--mobile {
-    background: white;
+    background: transparent;
     width: 60px;
     height: 60px;
-    top: 0;
     transition: all 1.5s cubic-bezier(0.86, 0, 0.07, 1); }
   .navbar-alt .navbar__logo--image {
     width: 60px;
@@ -95,7 +107,8 @@ div#preloader {
     position: fixed;
     z-index: 100;
     margin: 0;
-    transition: all 1.5s cubic-bezier(0.86, 0, 0.07, 1); }
+    transition: all 1.5s cubic-bezier(0.86, 0, 0.07, 1);
+    top: 0px; }
 
 .navbar-mobile {
   height: 60px;

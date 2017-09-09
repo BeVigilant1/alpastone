@@ -37,7 +37,7 @@ body, html {
   padding: 0;
   color: black;
   background: #ebebeb;
-  font-size: 100%;
+  font-size: 92%;
   font-family: 'Roboto', sans-serif; }
 
 * {
@@ -52,8 +52,10 @@ h1, h2, h3 {
   font-family: 'Mint Spirit No2'; }
 
 h2 {
+  line-height: auto;
   font-size: 1.3em;
-  margin: 25px 0 25px 0; }
+  text-align: center;
+  margin: 25px 0 10px 0; }
 
 h3 {
   font-size: 3em;
@@ -77,7 +79,7 @@ a {
 
 .spacer, .spacer-white, .spacer-small {
   clear: both;
-  margin: 120px 0;
+  margin: 50px 0;
   width: 100%;
   height: 100%; }
   .spacer div, .spacer-white div, .spacer-small div {
@@ -87,8 +89,17 @@ a {
     color: #555555;
     font-size: 1em;
     margin: 0 auto;
-    padding: 70px 70px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); }
+    padding: 55px 55px;
+    position: relative;
+    border-bottom: 1px solid #222222; }
+    .spacer div:before, .spacer-white div:before, .spacer-small div:before {
+      content: '';
+      width: 32px;
+      height: 32px;
+      display: block;
+      background-image: url("../img/spacer.png");
+      position: relative;
+      margin: 20px auto; }
 
 .spacer-white {
   background: #fff;

@@ -1,0 +1,88 @@
+@import "../theme/variables";
+
+.topblock {
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300px;
+  width: 100%;
+  background:#fff;
+  border: none;
+  z-index: 666;
+  transition: all ($timing * 3) $easing;
+  font-family: 'Mint Spirit No2';
+  border-bottom: 1px solid $colorGrey;
+
+  p {
+     margin-left: 20px;
+    text-transform: uppercase;
+    letter-spacing: .2em
+
+  }
+  span {
+  text-decoration: underline;
+
+    padding-right: 10px;display: block;
+}
+  &__logo {
+  width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex:1;
+  &--image {
+      width: 175px;
+      height: 175px;
+      transition: all ($timing * 4) $easing;
+  }
+  &__number {
+    flex:1;
+font-size: $xmedium;
+
+
+    }
+    &--phone{
+display: flex;
+   p {
+display: flex;
+font-size: $small;
+
+    }
+  }
+  &__social {
+    flex:1;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    border-radius:0 !important;
+      min-width: 150px;
+
+
+  }
+  }
+
+}
+
+.topblock__social {
+     margin-right: 20px;
+
+}
+.topblock__social--link {
+    img{
+  border: 1px solid $colorGrey;
+      padding: 10px;
+      &:hover {
+        opacity: .7;
+      }
+
+    }
+    }

@@ -1,7 +1,7 @@
 @import "../theme/variables";
-
+@import "../components/TopBlock";
 .hero {
-  margin-top: 60px;
+  margin-top: 230px;
   height: 640px;
   background-attachment: fixed;
   background-size: cover;
@@ -17,8 +17,9 @@
 
   &__textblock {
     background: #fff;
-    margin-top: 120px;
+    margin-top: 180px;
     padding: 35px 35px 50px 35px;
+    border: 1px solid $colorDark;
 
     @media (max-width: 768px) {
     margin-top: 295px;
@@ -37,12 +38,13 @@
     color: $colorDark;
     border-radius: 0;
     z-index: 1;
+
     position: relative;
     overflow: hidden;
     transition: color $timing $easing;
     text-transform: uppercase;
     letter-spacing: .1em;
-    border: none;
+    border: 1px solid $colorDark;
 
     @include shadow;
 
@@ -59,6 +61,7 @@
       z-index: -20;
       transform: scaleY(0);
       transition: height $timing $easing, transform $timing $easing;
+
     }
 
     &:hover {
@@ -81,7 +84,7 @@
   &__textblock {
     @extend .hero__textblock;
 
-    margin-top: 120px;
+    margin-top: 50px;
   }
 
   &__button {
@@ -90,23 +93,38 @@
 
   &__image {
     overflow: hidden;
-    margin-top: 120px;
+    margin-top: 50px;
   }
 }
 
 .decor {
+    display: flex;
+    width: 100%;
+    .article {
+      border: 1px solid $colorGrey;
+      height: 150px;
+    }
   &__block {
+      transition: all ($timing * 2) $zoom;
+
+    &:hover {
+      background: $transparent;
+
+  }
+
     p {
-      font-size: $small;
-      margin-top: 15px;
-      min-height: 10px;
+          font-size: 0.7em;
+    margin-top: 0;
+    min-height: 10px;
+    padding: 0 80px;
     }
 
     &--item {
       background-size: 105%;
       background-position: center center;
-      height: 450px;
+      height: 300px;
       transition: all ($timing * 2) $zoom;
+
 
       &:hover {
         cursor: pointer;
@@ -120,37 +138,65 @@
       }
 
       h2 {
-        color: #fff;
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+ transform: translate(-50%, -50%);
+          color: #fff;
         position: relative;
-        top: 80%;
-        left: 5%;
-        font-size: $xmedium;
+        font-size: $medium;
       }
+     p {
+      font-size: $small;
+      margin-top: 15px;
+      min-height: 10px;
+    }
     }
   }
 }
+.decor a {
+  width: 50%;
+  text-decoration: none;
+  color: $colorDark;
+margin-top: 20px;
+ overflow: hidden;
+}
+.decor__block--item {
+height: 220px;
 
+}
 #decor__block--ladder {
   background: url("../img/decor_lestnica2.jpg") no-repeat;
+  background-size: cover;
 }
 
 #decor__block--fireplace {
   background: url("../img/decor_kamin3.jpg") no-repeat;
+  background-size: cover;
+
 }
 
 #decor__block--table {
   background: url("../img/decor_stol.jpg") no-repeat;
+  background-size: cover;
+
 }
 
 #decor__block--accsess {
   background: url("../img/decor_accses.jpg") no-repeat;
+  background-size: cover;
+
 }
 
 #decor__block--floor {
   background: url("../img/decor_oblicovka_pola.jpg") no-repeat;
+  background-size: cover;
+
 }
 #decor__block--paint {
   background: url("../img/decor_paint1.jpg") no-repeat;
+  background-size: cover;
+
 }
 
 
@@ -253,7 +299,6 @@
 
   &__social {
     padding-left: 30px;
-
     &--link {
       padding: 0 15px 0 0;
     }

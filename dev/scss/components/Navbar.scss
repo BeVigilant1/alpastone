@@ -1,11 +1,7 @@
 @import "../theme/variables";
 
 .navbar {
-  @media (max-width: 768px) {
-    display: none;
-  }
-
-  display: block;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -15,7 +11,22 @@
   border: none;
   z-index: 666;
   transition: all ($timing * 3) $easing;
-  font-family: 'Mint Spirit No2';
+  border-bottom: 1px solid $colorGrey;
+
+    &:after {
+      content: 'Alpastone';
+  color: $colorGrey;
+      font-size: $normal;
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: .5em;
+      font-weight: bold;
+      position: absolute;
+      top:0;
+      left:10%;
+ animation: textupAlt ($timing * 3) $easing forwards;
+      transition: padding $timing $easing;
+    }
 
   ul {
     list-style: none;
@@ -25,7 +36,7 @@
       list-style: none;
       text-transform: uppercase;
       font-weight: light;
-      animation: textup ($timing * 3) $easing forwards;
+      animation: textupAlt ($timing * 3) $easing forwards;
       transition: padding $timing $easing;
       position: relative;
       padding: 0 20px;
@@ -39,15 +50,15 @@
 
   &__logo {
     position: fixed;
-    top: 35px;
+    top: -30px;
     left: 35px;
     background: $colorLightGrey;
     width: 250px;
     height: 250px;
     border-radius: 50%;
     vertical-align: middle;
-    transition: all ($timing * 4) $easing;
-
+ animation: textupAlt ($timing * 3) $easing forwards;
+      transition: padding $timing $easing;
     &--image {
       width: 200px;
       height: 200px;
@@ -59,27 +70,27 @@
 
 .navbar-alt {
   @extend .navbar;
-
+display: block;
   ul li {
     transition: all ($timing * 2) $easing;
     animation: textupAlt ($timing * 2) $easing forwards;
+      top:0px;
 
     a {
-      color: #fff;
+  color: black;
     }
   }
 
   height: 60px;
-  background: $transparent;
+  background: #FFF;
   transition: all ($timing * 2) $easing;
 
   .navbar__logo {
     @extend .navbar__logo;
 
-    background: rgba(255, 255, 255, 1);
+    background:transparent;
     width: 60px;
     height: 60px;
-    top: 0;
     transition: all ($timing * 3) $easing;
   }
 
@@ -90,6 +101,8 @@
     z-index: 100;
     margin: 0;
     transition: all ($timing * 3) $easing;
+      top:0px;
+
   }
 }
 
@@ -115,6 +128,7 @@
     z-index: 999;
     top: 0;
     transition: all ($timing * 3) $easing;
+
   }
 
   .navbar__logo--image--mobile {
@@ -124,6 +138,8 @@
     z-index: 101;
     margin: 0;
     transition: all ($timing * 3) $easing;
+
+
   }
 
 @keyframes textup {
